@@ -5,7 +5,7 @@
 
 <br>
 
-<img width="1826" height="1326" alt="ss" src="https://github.com/user-attachments/assets/dbe78100-ad10-455c-a2ca-eae9f3b8c0f1" />
+<img width="1920" height="793" alt="macropad under text effect" src="https://github.com/user-attachments/assets/fc65a746-2034-451f-84fc-836b2109d4ad" />
 
 
 <br><br>
