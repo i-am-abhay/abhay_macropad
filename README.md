@@ -1,9 +1,6 @@
 <div align="center">
 
-### Abhay's Macropad
-#### - Custom 9 Key Macropad -
-
-<br>
+<br><br><br><br>
 
 <img width="1920" height="793" alt="hella tuff macropad pic" src="https://github.com/user-attachments/assets/d8290e90-5b5d-40d1-a68c-4fce9095699a" />
 
