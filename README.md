@@ -8,7 +8,7 @@
 <img width="1084" height="736" alt="Screenshot 2026-06-04 at 2 06 35 PM" src="https://github.com/user-attachments/assets/922ae71f-849a-4364-94cf-6556b6bba708" />
 <br><br>
 
-| ⚡ RP2040 MCU | ⌨️ 9 Keys | ✨ Underlit Keys | 📺 .91" OLED Screen | 🎛️ 1 Rotary Encoder |
+| ⚡ RP2040 | ⌨️ 9 KEYS | ✨ PER-KEY RGB LIGHTING | 📺 .91" OLED SCREEN | 🎛️  ROTARY ENCODER |
 |:--:|:--:|:--:|:--:|:--:|
 
 </div>
