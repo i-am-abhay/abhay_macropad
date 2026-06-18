@@ -1,32 +1,8 @@
-# Macropad
-
-> **Author:** Abhay P.  
-> **Description:** A personal macropad which features 9 keys with per-key underglow LEDs, a 128×32 SSD1306 OLED display, a rotary encoder, and is powered by a Seeed Studio XIAO RP2040 microcontroller.  
-> **Created On:** 05/30/26
-
----
-
-## Project Specifications
-
-| Component | Description |
-|------------|------------|
-| Microcontroller | Seeed Studio XIAO RP2040 |
-| Keys | 9 Mechanical Keys |
-| Display | SSD1306 128×32 OLED |
-| Lighting | Per-Key Underglow LEDs |
-| Input | Rotary Encoder |
-| Enclosure | Custom 3D Printed Case |
-| Firmware | KMK |
-
----
-
 # 1. Schematic Design
 
 > ⏱️ **Time Logged:** 2 Hours
 
-I worked on creating the schematic for my macroboard. I had some challenges in getting everything to work and to not get any erros in ERC. However, in the end, I got it done and I am happy with the end result.
-
-<img width="1115" height="770" alt="Screenshot 2026-05-30 at 1 39 43 PM" src="https://github.com/user-attachments/assets/057b5387-2e15-43a1-b89a-73adc54ac3ea" />
+I worked on creating the schematic for my macroboard. One challenge I ran into was making sure all of the components were connected correctly while also keeping the design organized. Initially, I kept getting ERC errors because of a few missing connections and incorrectly configured nets. Rather than randomly changing things, I went through each error one by one and traced the issue back to its source. This helped me better understand how the different components interacted with each other. After several revisions and checks, I was able to eliminate all ERC errors and complete a schematic that I was confident would work.
 
 ---
 
@@ -34,15 +10,7 @@ I worked on creating the schematic for my macroboard. I had some challenges in g
 
 > ⏱️ **Time Logged:** 2.5 Hours
 
-I worked on properly laying out all the components of my macroboard and routing them properly. I had some challenges with routing as there were lots of ratsnest lines with limited space. I made the pcb include m2 mounting holes so that it would remain stable in the case. Making the routing compact and away from the mounting holes became imperative so as to not damage the routes when screwing it in. I tried making it as compact as I could. Overall, I am happy with the end result.
-
-### PCB Images
-
-<img width="1115" height="770" alt="Screenshot 2026-05-30 at 1 41 28 PM" src="https://github.com/user-attachments/assets/43865aa9-e266-4683-b039-1f46649f0e77" />
-<img width="1115" height="770" alt="Screenshot 2026-05-30 at 1 41 31 PM" src="https://github.com/user-attachments/assets/2c57156d-2c99-4d79-b3ec-af3e2f382b64" />
-<img width="1115" height="770" alt="Screenshot 2026-05-30 at 1 40 27 PM" src="https://github.com/user-attachments/assets/b671468e-4ef9-4f86-9d57-ae9ef6a8d11e" />
-<img width="1115" height="770" alt="Screenshot 2026-05-30 at 1 40 18 PM" src="https://github.com/user-attachments/assets/58e27dcb-39e8-4b39-bf4f-95c525f106ac" />
-
+I worked on properly laying out all the components of my macroboard and routing them. This ended up being more difficult than I originally expected because there were a large number of ratsnest lines in a relatively small amount of space. My first layout placed some traces too close to the mounting holes, which could have made the board more vulnerable to damage during assembly. I ended up moving several components and rerouting sections of the board to create more clearance while still keeping the design compact. This process taught me that PCB design is often about balancing competing constraints rather than finding a perfect solution. Overall, I am happy with the end result.
 
 ---
 
@@ -50,9 +18,7 @@ I worked on properly laying out all the components of my macroboard and routing 
 
 > ⏱️ **Time Logged:** 1.75 Hours
 
-I created a 3D model for the bottom case which will house my PCB. It was easy but I just had to get the measurements for the standoffs, inner case, and outter case just right so that all the components would fit and not cause any probelms; I had to account for the inaccuracies of 3D printing and allowed for some clearence. Overall, I am happy with the end result.
-
-<img width="1175" height="756" alt="Screenshot 2026-05-30 at 1 46 41 PM" src="https://github.com/user-attachments/assets/36aedfa1-04c8-4e18-9619-a1cd2556525d" />
+I created a 3D model for the bottom case which will house my PCB. While the design itself was fairly straightforward, getting the dimensions correct required more attention than I expected. I had to account for PCB thickness, standoff placement, screw clearances, and the tolerances of 3D printing. During the design process I realized that a few measurements that worked digitally would likely be too tight once printed, so I increased clearances in several areas. Overall, I am happy with the end result.
 
 ---
 
@@ -60,9 +26,7 @@ I created a 3D model for the bottom case which will house my PCB. It was easy bu
 
 > ⏱️ **Time Logged:** 1 Hour
 
-I created the top case for my macrobaord. This was relatively easy as the outer measurements were based off of the bottom case and the only work I had download the plate for 9 keys and create cut outs for them.
-
-<img width="1175" height="756" alt="Screenshot 2026-05-30 at 1 43 57 PM" src="https://github.com/user-attachments/assets/fc95e0a3-50cf-4b03-8639-a70dd5975e9b" />
+I created the top case for my macroboard. This was relatively easy since the outer dimensions were based on the bottom case. The main challenge was ensuring that the switch cutouts aligned correctly with the PCB and that there was enough room for the switches to sit properly. I double-checked measurements against both the PCB and the keyboard plate before finalizing the design.
 
 ---
 
@@ -72,9 +36,7 @@ I created the top case for my macrobaord. This was relatively easy as the outer 
 
 I created the assembly file for my macroboard.
 
-This was not as painstaking because all I had to do was combine the different 3D files, whether it be the case or components, and combine them to create the final assembly.
-
-<img width="1175" height="756" alt="Screenshot 2026-05-30 at 1 44 16 PM" src="https://github.com/user-attachments/assets/4adc9961-c534-4002-bbe7-cba21bf73aa5" />
+This was not as painstaking because most of the work involved combining the different 3D files and imported components into a single model. However, the assembly helped me catch a few small alignment issues that were less obvious when looking at each part individually. Being able to verify fitment before manufacturing gave me more confidence in the final design.
 
 ---
 
@@ -82,9 +44,7 @@ This was not as painstaking because all I had to do was combine the different 3D
 
 > ⏱️ **Time Logged:** 1.5 Hours
 
-I coded the firmware for my macroboard. I knew python so knowing what I was doing was not a problem. However, I was completely new to the KMK software and had to read a couple of articles and watch some videos to understand it. It was really easy and simple afterwards and I got it done. I am happy with the quality of my code.
-
-![Screenshot 2026-05-22 at 12.54.42 PM](https://stasis.hackclub-assets.com/images/1779472469415-7lx7gg.png)
+I coded the firmware for my macroboard. Since I already knew Python, learning the programming side was not too difficult. However, I was completely new to KMK and initially struggled to understand how layers, keymaps, and hardware definitions were structured. I spent time reading documentation and watching tutorials before experimenting with small test configurations. Once I understood the framework, development became much faster. This experience showed me the importance of learning how to navigate technical documentation independently when working with unfamiliar tools.
 
 ---
 
@@ -92,9 +52,7 @@ I coded the firmware for my macroboard. I knew python so knowing what I was doin
 
 > ⏱️ **Time Logged:** 2.5 Hours
 
-I sourced the parts for my macroboard. I thought this was going to be a relatively easy task but I quickly found out that its easier said than done. Finding quality components for a reduced price was a bit of challenge, but in the end, I got it done.
-
-![Screenshot 2026-05-22 at 12.37.48 PM](https://stasis.hackclub-assets.com/images/1779471453919-b9soa0.png)
+I sourced the parts for my macroboard. I originally expected this to be one of the easiest parts of the project, but it ended up taking much longer than anticipated. Many components were either out of stock, sold in larger quantities than I needed, or had shipping costs that significantly increased the overall price. I compared multiple vendors and evaluated tradeoffs between cost, quality, and delivery time before finalizing my selections. This process gave me a better appreciation for the logistical side of hardware development.
 
 ---
 
@@ -102,28 +60,14 @@ I sourced the parts for my macroboard. I thought this was going to be a relative
 
 > ⏱️ **Time Logged:** 30 Minutes
 
-I uploaded all of my files to my github repo and created README for final submission.
+I uploaded all of my files to my GitHub repository and created a README for final submission.
 
-![Screenshot 2026-05-22 at 12.42.39 PM](https://stasis.hackclub-assets.com/images/1779471744590-grjdku.png)
-
----
-
-# Total Project Statistics
-
-| Category | Time Logged |
-|----------|------------:|
-| Schematic Design | 2 hrs |
-| PCB Layout & Routing | 2.5 hrs |
-| Bottom Case Design | 1.75 hrs |
-| Top Case Design | 1 hr |
-| Assembly Creation | 45 min |
-| Firmware Development | 1.5 hrs |
-| Parts Sourcing | 2.5 hrs |
-| GitHub & Documentation | 30 min |
-| **Total Time** | **12.5 hrs** |
+Although this was one of the shorter tasks, I wanted the project to be easy for someone else to understand and reproduce. Organizing files, documenting the design process, and including relevant resources helped make the project more accessible and complete.
 
 ---
 
 # Reflection
 
-I am immensly grateful for the opportunity to develop a hardware project with integration of software. I started this because I wanted to create something meaningfull for myself that I would use. I learned how to use applicatoins that are used widely in the electronic devleopment industry. The knowledge that I have gained throughout this project will be invaluable and allowed me to create a tangible project that I am be proud of.
+I am immensely grateful for the opportunity to develop a hardware project that integrated both electrical and software engineering. I started this project because I wanted to create something useful for myself rather than simply following a tutorial. Throughout the process, I learned that building hardware involves much more iteration than I initially expected. Whether it was resolving ERC errors, rerouting traces, adjusting mechanical tolerances, or learning a new firmware framework, each challenge required a different approach to problem-solving.
+
+Beyond the technical skills, I gained experience working through uncertainty and debugging issues that did not have obvious solutions. The project exposed me to tools and workflows used throughout the electronics industry and gave me a greater appreciation for the engineering process from concept to implementation. Most importantly, it allowed me to transform an idea into a tangible product that I am genuinely proud of.
