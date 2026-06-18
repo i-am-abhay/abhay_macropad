@@ -1,9 +1,11 @@
 <div align="center">
 
-<br><br><br><br>
 
-<img width="1920" height="793" alt="hella tuff macropad pic" src="https://github.com/user-attachments/assets/d8290e90-5b5d-40d1-a68c-4fce9095699a" />
+### Abhay's Macropad
 
+<b>
+
+<img width="1084" height="736" alt="Screenshot 2026-06-04 at 2 06 35 PM" src="https://github.com/user-attachments/assets/922ae71f-849a-4364-94cf-6556b6bba708" />
 <br><br>
 
 | ⚡ RP2040 MCU | ⌨️ 9 Keys | ✨ Underlit Keys | 📺 .91" OLED Screen | 🎛️ 1 Rotary Encoder |
