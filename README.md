@@ -1,9 +1,6 @@
 <div align="center">
 
-
-### Macropad
-
-<b>
+<br><br>
 
 <img width="1084" height="736" alt="Screenshot 2026-06-04 at 2 06 35 PM" src="https://github.com/user-attachments/assets/922ae71f-849a-4364-94cf-6556b6bba708" />
 <br><br>
