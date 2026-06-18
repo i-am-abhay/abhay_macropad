@@ -1,7 +1,7 @@
 <div align="center">
 
 
-### Abhay's Macropad
+### Macropad
 
 <b>
 
