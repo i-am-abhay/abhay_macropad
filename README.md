@@ -63,11 +63,18 @@
 
 <div align="left">
 
-### Why I Built This
+### About the Project
 
-I wanted a macropad that fit the way I use my computer every day. I found myself doing the same shortcuts over and over, like opening apps, taking screenshots, controlling media, and switching between tasks. Instead of reaching for different key combinations every time, I wanted a single device that could do it with one press.
+This project is a custom 9-key macropad that I designed and built from scratch. It uses a Seeed Studio XIAO RP2040 and KMK firmware to run programmable macros, shortcuts, and media controls. It also has a 128×32 OLED display that shows animations and status information, RGB LEDs that provide visual feedback for each key press, and a rotary encoder for volume control.
 
-I also wanted to learn more about hardware by building something from scratch. Rather than following an existing design, I designed the PCB, modeled the case, wrote the firmware, and put everything together myself. The end result is a macropad that's both useful for my daily workflow and a project that taught me a lot about PCB design, CAD, embedded programming, and hardware development.
+<br><br>
+
+### Why I Built It
+
+I wanted a macropad that matched the shortcuts I use every day instead of relying on a standard keyboard. I found myself constantly opening the same apps, taking screenshots, controlling media, and using the same keyboard shortcuts over and over. Building a macropad let me do all of that with a single key press.
+
+I also wanted to learn more about hardware by building a complete project from scratch. Instead of using someone else's design, I designed the PCB, modeled the case, wrote the firmware, assembled the hardware, and documented the entire process. By the end of the project, I had a macropad that I actually use while learning more about PCB design, CAD, embedded programming, and hardware development.
+
 
 <br><br><br><br><br>
   
