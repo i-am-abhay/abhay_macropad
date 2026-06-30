@@ -2,7 +2,9 @@
 
 <br><br>
 
-<img width="1084" height="736" alt="Screenshot 2026-06-04 at 2 06 35 PM" src="https://github.com/user-attachments/assets/922ae71f-849a-4364-94cf-6556b6bba708" />
+<img width="1920" height="793" alt="hella tuff macropad pic" src="https://github.com/user-attachments/assets/cf51fd52-7ac0-4340-bdfe-1f38c34a8556" />
+
+
 <br><br>
 
 | ⚡ RP2040 | ⌨️ 75 Keys | ✨ RGB Lighting | 📺 0.91" OLED | 🔌 USB-C |
