@@ -2,8 +2,7 @@
 
 <br><br>
 
-<img width="1920" height="793" alt="hella tuff macropad pic" src="https://github.com/user-attachments/assets/cf51fd52-7ac0-4340-bdfe-1f38c34a8556" />
-
+<img width="1084" height="736" alt="Screenshot 2026-06-04 at 2 06 35 PM" src="https://github.com/user-attachments/assets/bb11622c-5488-4754-8f32-581bb5da71c6" />
 
 <br><br>
 
