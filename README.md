@@ -62,6 +62,14 @@
 <br><br><br><br><br>
 
 <div align="left">
+
+### Why I Built This
+
+I wanted a macropad that fit the way I use my computer every day. I found myself doing the same shortcuts over and over, like opening apps, taking screenshots, controlling media, and switching between tasks. Instead of reaching for different key combinations every time, I wanted a single device that could do it with one press.
+
+I also wanted to learn more about hardware by building something from scratch. Rather than following an existing design, I designed the PCB, modeled the case, wrote the firmware, and put everything together myself. The end result is a macropad that's both useful for my daily workflow and a project that taught me a lot about PCB design, CAD, embedded programming, and hardware development.
+
+<br><br><br><br><br>
   
 ### PCB Schematic
 
