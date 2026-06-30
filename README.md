@@ -75,7 +75,7 @@ This project is a custom 9-key macropad that I designed and built from scratch. 
 
 I wanted a macropad that matched the shortcuts I use every day instead of relying on a standard keyboard. I found myself constantly opening the same apps, taking screenshots, controlling media, and using the same keyboard shortcuts over and over. Building a macropad let me do all of that with a single key press.
 
-I also wanted to learn more about hardware by building a complete project from scratch. Instead of using someone else's design, I designed the PCB, modeled the case, wrote the firmware, assembled the hardware, and documented the entire process. By the end of the project, I had a macropad that I actually use while learning more about PCB design, CAD, embedded programming, and hardware development.
+I also wanted to learn more about hardware by building a complete project from scratch. So, I designed the PCB, modeled the case, wrote the firmware, assembled the hardware, and documented the entire process. By the end of the project, I had a macropad that I actually use while learning more about PCB design, CAD, embedded programming, and hardware development.
 
 
 <br><br><br><br><br>
