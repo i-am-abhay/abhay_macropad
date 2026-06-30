@@ -1,17 +1,17 @@
-# Macropad Firmware Documentation 
+# Macropad Firmware Documentation
 
 ## Overview
 
-This firmware runs a 9-key macropad built on a Seeed Studio XIAO RP2040 using KMK firmware.
+This firmware runs my 9-key macropad using a Seeed Studio XIAO RP2040 and KMK firmware.
 
-It controls:
+It handles:
 
-* 9 macro keys
-* SSD1306 128×32 OLED display
-* 9 NeoPixel RGB LEDs (daisy-chained)
-* Rotary encoder for volume control
+- 9 macro keys
+- SSD1306 128×32 OLED display
+- 9 daisy-chained NeoPixel RGB LEDs
+- Rotary encoder for volume control
 
-All components work together to handle input, visual output, and system control.
+Everything works together to handle input, visual feedback, and media controls.
 
 ---
 
@@ -19,22 +19,22 @@ All components work together to handle input, visual output, and system control.
 
 ### Microcontroller
 
-* Seeed Studio XIAO RP2040
+- Seeed Studio XIAO RP2040
 
 ### Display
 
-* SSD1306 OLED (128×32, I2C)
-* Address: 0x3C
-* Custom lightweight driver using framebuffer
+- SSD1306 OLED (128×32, I2C)
+- Address: `0x3C`
+- Custom framebuffer-based driver
 
 ### Input
 
-* 3×3 key matrix (9 keys total)
-* Rotary encoder (volume control)
+- 3×3 key matrix (9 keys)
+- Rotary encoder
 
 ### Output
 
-* 9 NeoPixel LEDs (single daisy-chained strip)
+- 9 NeoPixel RGB LEDs connected in a single chain
 
 ---
 
@@ -42,25 +42,25 @@ All components work together to handle input, visual output, and system control.
 
 ### Key Matrix
 
-* Columns: GP26, GP27, GP28
-* Rows: GP4, GP2, GP1
-* Diode orientation: COL2ROW
+- Columns: GP26, GP27, GP28
+- Rows: GP4, GP2, GP1
+- Diode orientation: `COL2ROW`
 
 ### OLED (I2C)
 
-* SDA: GP6
-* SCL: GP7
-* 400kHz I2C speed
+- SDA: GP6
+- SCL: GP7
+- I2C Speed: 400 kHz
 
 ### Encoder
 
-* A: GP29
-* B: GP0
+- A: GP29
+- B: GP0
 
 ### NeoPixel
 
-* Data: GP3
-* 9 LEDs in a single chain
+- Data: GP3
+- 9 LEDs
 
 ---
 
@@ -68,22 +68,23 @@ All components work together to handle input, visual output, and system control.
 
 Each key has:
 
-* A label
-* A macro or shortcut
-* A color
-* An index mapping to a bitmap and LED position
+- A label
+- A macro or keyboard shortcut
+- A color
+- A bitmap for the OLED
+- An LED index
 
-### Key actions include:
+### Current key actions
 
-* Screenshot tools
-* Chrome launcher
-* Tab recovery
-* Force quit
-* Lock screen
-* Full screenshot
-* Spotify launch
-* Play/pause
-* Spotlight search
+- Screenshot tools
+- Open Chrome
+- Reopen closed tab
+- Force Quit
+- Lock screen
+- Full screenshot
+- Open Spotify
+- Play/Pause
+- Spotlight Search
 
 ---
 
@@ -91,161 +92,158 @@ Each key has:
 
 When a key is pressed:
 
-1. OLED animation starts
-2. LED animation begins across the strip
-3. The corresponding macro or shortcut is executed
-4. The OLED displays the matching bitmap
+1. The OLED animation starts.
+2. The LED animation begins.
+3. The macro or shortcut runs.
+4. The matching bitmap is shown on the OLED.
 
 When the key is released:
 
-* LED animation clears the strip
+- The LEDs clear with the reverse animation.
 
 ---
 
 ## OLED System
 
-The OLED uses a framebuffer-based driver.
+The OLED uses a custom framebuffer-based driver.
 
-### Features:
+### Features
 
-* Text rendering
-* Bitmap rendering (128×32 raw images)
-* Direct I2C updates
+- Text rendering
+- 128×32 bitmap rendering
+- Direct I2C updates
 
 ---
 
 ## OLED Animation States
 
-### IDLE
+### Idle
 
-* Shows current time in HH:MM format
-* Shows date below the time
-* Subtle movement in text position
+- Shows the current time in `HH:MM`
+- Shows the date below the time
+- Slightly moves the text to keep the screen from looking static
 
-### IN (slide-in)
+### Slide In
 
-* Bitmap slides in from the right side
-* Smooth transition into view
+- The bitmap slides in from the right.
 
-### HOLD
+### Hold
 
-* Bitmap remains fully visible
-* Displayed for approximately 9–10 seconds
+- The bitmap stays on screen for about 10 seconds.
 
-### OUT (fade-out)
+### Fade Out
 
-* Bitmap is cleared using a pixel wipe effect
-* Returns to idle clock
+- The bitmap clears with a pixel wipe animation.
+- The display returns to the clock.
 
 ---
 
-## LED SYSTEM
+## LED System
 
-The LED system controls 9 NeoPixel LEDs in a single chain.
+The LED system controls all 9 NeoPixels.
 
-### Behavior:
+### Behavior
 
-* All LEDs are off when idle
-* LEDs animate one-by-one when activated
-* Each key has a fixed RGB color
+- All LEDs stay off while idle.
+- Pressing a key starts an animation.
+- Every key has its own RGB color.
 
-### Operation:
+### On Key Press
 
-#### On key press
+- LEDs light up one at a time from LED 0 to the selected key.
 
-* LEDs light sequentially from index 0 up to the selected key index
-* Animation runs in small timed steps without blocking input
+### On Key Release
 
-#### On key release
+- LEDs turn off one at a time back to LED 0.
 
-* LEDs clear sequentially from the active index back to 0
+### How it Works
 
-### Control method
-
-* LED updates are handled inside the main scan loop
-* Animation runs independently of key processing
+- The animation runs inside the main keyboard scan loop.
+- It doesn't block key presses while it's running.
 
 ---
 
 ## LED Animation Engine
 
-The LED system uses a time-based animation controller.
+The LEDs use a simple time-based animation.
 
-### Fill animation
+### Fill Animation
 
-* LEDs turn on one-by-one from left to right
-* Each LED is assigned its key color
+- LEDs turn on from left to right.
+- Each LED uses that key's assigned color.
 
-### Clear animation
+### Clear Animation
 
-* LEDs turn off one-by-one from right to left
+- LEDs turn off from right to left.
 
 ### Timing
 
-* Animation is stepped using millisecond intervals
-* No blocking delays are used
+- The animation updates using timed intervals.
+- No blocking delays are used.
 
 ---
 
 ## Rotary Encoder
 
-Controls system volume:
+The rotary encoder controls system volume.
 
-* Rotate left → volume down
-* Rotate right → volume up
-* Press (if enabled) → mute toggle
+- Rotate left → Volume Down
+- Rotate right → Volume Up
+- Press (if enabled) → Mute
 
 ---
 
 ## Macros
 
-Some keys execute multi-step macros instead of single shortcuts.
+Some keys run multiple actions instead of a single shortcut.
 
-### Example: Spotify
+### Spotify
 
-* Opens system search (Spotlight)
-* Types "spotify"
-* Launches the application
+- Opens Spotlight
+- Types `spotify`
+- Opens Spotify
 
-### Example: Chrome
+### Chrome
 
-* Opens Spotlight
-* Launches Chrome
-* Selects a profile (school or personal)
+- Opens Spotlight
+- Opens Chrome
+- Selects the correct profile
 
 ---
 
-## Performance Design
+## Performance
 
 ### OLED
 
-* Frame updates are timed to avoid unnecessary refresh
-* Animation states control rendering frequency
+- The display only updates when it needs to.
+- Animations control when each frame is drawn.
 
 ### LEDs
 
-* LED animation runs inside the keyboard scan loop
-* No blocking delays are used during updates
+- LED animations run inside the keyboard scan loop.
+- They don't block the rest of the firmware.
 
 ---
 
 ## System Flow
 
-1. Key press is detected
-2. Macro or shortcut is executed
-3. OLED animation is triggered
-4. LED animation begins
-5. Encoder operates independently for volume control
+1. A key is pressed.
+2. The macro or shortcut runs.
+3. The OLED animation starts.
+4. The LED animation starts.
+5. The encoder continues handling volume independently.
 
 ---
 
 ## Summary
 
-This firmware runs a fully integrated macropad system:
+This firmware brings everything together into one system.
 
-* 9 programmable keys
-* OLED display with animations
-* RGB LED animated feedback per key
-* Rotary encoder for volume control
+It includes:
 
-All components run together in a synchronized input-output loop.
+- 9 programmable macro keys
+- OLED animations
+- RGB LED feedback
+- Rotary encoder volume control
+
+Everything runs together so the macros, display, LEDs, and encoder all stay in sync.
