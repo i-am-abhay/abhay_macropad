@@ -2,7 +2,7 @@
 
 <br><br>
 
-<img width="1920" height="793" alt="MACROBOARD ASSEMBLY" src="https://github.com/user-attachments/assets/9a7c854e-886c-4b5f-96a0-357ab7cd6fdd" />
+<img width="1084" height="736" alt="Screenshot 2026-06-04 at 2 06 35 PM" src="https://github.com/user-attachments/assets/dbf6ebe2-d9a3-4e4d-9fc5-e3c7188743d6" />
 
 <br><br>
 
