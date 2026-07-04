@@ -62,8 +62,6 @@ I wrote the firmware. Since I already knew Python, that part wasn't too hard. KM
 Hackatime link:  
 https://hackatime.hackclub.com/my/projects/macropad
 
-![Screenshot 2026-05-22 at 12.54.42 PM](https://stasis.hackclub-assets.com/images/1779472469415-7lx7gg.png)
-
 ---
 
 # 7. Parts Sourcing
@@ -71,8 +69,6 @@ https://hackatime.hackclub.com/my/projects/macropad
 > ⏱️ **Time Logged:** 2.5 Hours
 
 I sourced all of the parts for the project. I thought this would be one of the easiest parts, but it ended up taking a lot longer than I expected. Some parts were out of stock, some were only sold in bigger quantities than I needed, and shipping added more to the total than I expected. I checked a few different vendors before deciding where to order everything from.
-
-![Screenshot 2026-05-22 at 12.37.48 PM](https://stasis.hackclub-assets.com/images/1779471453919-b9soa0.png)
 
 ---
 
@@ -83,8 +79,6 @@ I sourced all of the parts for the project. I thought this would be one of the e
 I uploaded all of my project files to GitHub and finished the README.
 
 This didn't take very long, but I wanted everything to be organized and easy to follow. I cleaned up the repository, made sure everything was in the right place, and added the documentation someone would need if they wanted to build it themselves.
-
-![Screenshot 2026-05-31 at 5.18.50 PM.png](https://cdn.hackclub.com/019e801e-0376-7b87-b076-0972f53ab778/Screenshot%202026-05-31%20at%205.18.50%E2%80%AFPM.png)
 
 ---
 
