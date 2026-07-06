@@ -59,9 +59,6 @@ This didn't take too long because most of the work was putting all of the parts 
 
 I wrote the firmware. Since I already knew Python, that part wasn't too hard. KMK was completely new to me though. At first I wasn't sure how layers, keymaps, and the hardware definitions worked together, so I spent some time reading the documentation, watching tutorials, and testing small examples until everything started making sense. After that, writing the rest of the firmware went a lot faster.
 
-Hackatime link:  
-https://hackatime.hackclub.com/my/projects/macropad
-
 ---
 
 # 7. Parts Sourcing
