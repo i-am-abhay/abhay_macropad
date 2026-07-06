@@ -2,8 +2,7 @@
 
 <br><br><br>
 
-<img width="1266" height="570" alt="Screenshot 2026-07-06 at 3 53 36 PM" src="https://github.com/user-attachments/assets/30e0e23b-9997-4cb0-a692-800339ed7b87" />
-
+<img width="1266" height="570" alt="Screenshot 2026-07-06 at 4 13 09 PM" src="https://github.com/user-attachments/assets/8a7b0539-23ea-4797-9e5c-9272e8c53ec8" />
 <br><br><br><br><br><br>
 
 <div align="center">
