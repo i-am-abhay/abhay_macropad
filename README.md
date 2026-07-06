@@ -59,8 +59,6 @@
 
 ### About the Project
 
-**RP2040** • **9 Keys** • **RGB Lighting** • **0.91" OLED** • **USB-C**
-
 This project is a custom 9-key macropad that I designed and built from scratch. It uses a Seeed Studio XIAO RP2040 and KMK firmware to run programmable macros, shortcuts, and media controls. It also has a 128×32 OLED display that shows animations and status information, RGB LEDs that provide visual feedback for each key press, and a rotary encoder for volume control.
 
 <br><br>
