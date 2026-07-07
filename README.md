@@ -35,7 +35,7 @@
 |  9x | [Tactile Switches](https://www.aliexpress.us/item/3256808352947766.html)             | $3.50  |
 |  9x | [Frosted Clear Keycaps](https://www.aliexpress.com/item/3256810359094598.html)       | $2.67  |
 |  9x | [SOD-123 Diodes](https://www.aliexpress.us/item/3256805388348871.html)               | $1.53  |
-| 13x | [1206 Capacitors](https://www.aliexpress.us/item/3256807177349573.html)              | $1.26  |
+| 11x | [1206 Capacitors](https://www.aliexpress.us/item/3256807177349573.html)              | $1.26  |
 |  1x | [0805 Resistor](https://www.aliexpress.us/item/3256809618872827.html)                | $1.42  |
 |  1x | [Bus Buffer Gate](https://www.aliexpress.us/item/3256807066238250.html)              | $1.51  |
 |  1x | [Soldering Wire](https://www.aliexpress.com/item/3256806445906651.html)              | $1.18  |
