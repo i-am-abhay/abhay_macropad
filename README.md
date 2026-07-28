@@ -38,7 +38,6 @@
 | 11x | [1206 Capacitors](https://www.aliexpress.us/item/3256807177349573.html)              | $1.26  |
 |  1x | [0805 Resistor](https://www.aliexpress.us/item/3256809618872827.html)                | $1.42  |
 |  1x | [Bus Buffer Gate](https://www.aliexpress.us/item/3256807066238250.html)              | $1.51  |
-|  1x | [Soldering Wire](https://www.aliexpress.com/item/3256806445906651.html)              | $1.18  |
 |  1x | [Custom PCB](https://jlcpcb.com/)                                                    | $3.30  |
 |  1x | 3D Printed Case (Printing Legion)                                                    | $0.00  |
 
@@ -46,11 +45,11 @@
 
 <br>
 
-**Parts Subtotal:** $35.45
+**Parts Subtotal:** $34.27
 
 **Fees / Tax / Printing Legion Shipping:** $9.65
 
-**Grand Total:** 45.10
+**Grand Total:** 43.92
 
 <br><br><br><br><br>
 
