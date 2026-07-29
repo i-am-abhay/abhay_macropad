@@ -31,6 +31,7 @@
 |  4x | [M3 Heat-Set Inserts](https://www.aliexpress.us/item/3256808480358197.html)          | $1.99  |
 |  4x | [M3 Machine Screws](https://www.aliexpress.us/item/2255800784679048.html)            | $1.87  |
 |  1x | [Seeed Studio XIAO RP2040](https://www.aliexpress.us/item/3256808014602728.html)     | $11.73 |
+|  9x | [SK6812 MINI-E RGB LEDS](https://www.aliexpress.us/item/3256805007401420.html)       | $2.50  |
 |  1x | [SSD1306 128×32 OLED Display](https://www.aliexpress.com/item/2251832623890853.html) | $1.52  |
 |  9x | [Tactile Switches](https://www.aliexpress.us/item/3256808352947766.html)             | $3.50  |
 |  9x | [Frosted Clear Keycaps](https://www.aliexpress.com/item/3256810359094598.html)       | $2.67  |
@@ -45,11 +46,11 @@
 
 <br>
 
-**Parts Subtotal:** $34.27
+**Parts Subtotal:** $34.77
 
 **Fees / Tax / Printing Legion Shipping:** $9.65
 
-**Grand Total:** 43.92
+**Grand Total:** $44.42
 
 <br><br><br><br><br>
 
