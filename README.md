@@ -48,7 +48,7 @@
 
 **Parts Subtotal:** $34.77
 
-**Fees / Tax / Printing Legion Shipping:** $9.65
+**Fees  |  Tax** $9.65
 
 **Grand Total:** $44.42
 
