@@ -3,6 +3,24 @@
 <br><br><br>
 
 <img width="1266" height="570" alt="Screenshot 2026-07-06 at 4 13 09 PM" src="https://github.com/user-attachments/assets/8a7b0539-23ea-4797-9e5c-9272e8c53ec8" />
+
+<br><br><br><br><br><br>
+
+<div align="left">
+
+### About the Project
+
+This project is a custom 9-key macropad that I designed and built from scratch. It uses a Seeed Studio XIAO RP2040 and KMK firmware to run programmable macros, shortcuts, and media controls. It also has a 128×32 OLED display that shows animations and status information, RGB LEDs that provide visual feedback for each key press, and a rotary encoder for volume control.
+
+<br><br>
+
+### Why I Built It
+
+I wanted a macropad that matched the shortcuts I use every day instead of relying on a standard keyboard. I found myself constantly opening the same apps, taking screenshots, controlling media, and using the same keyboard shortcuts over and over. Building a macropad let me do all of that with a single key press.
+
+I also wanted to learn more about hardware by building a complete project from scratch. So, I designed the PCB, modeled the case, wrote the firmware, assembled the hardware, and documented the entire process. By the end of the project, I had a macropad that I actually use while learning more about PCB design, CAD, embedded programming, and hardware development.
+
+
 <br><br><br><br><br><br>
 
 <div align="center">
@@ -54,23 +72,6 @@
 
 <br><br><br><br><br>
 
-<div align="left">
-
-### About the Project
-
-This project is a custom 9-key macropad that I designed and built from scratch. It uses a Seeed Studio XIAO RP2040 and KMK firmware to run programmable macros, shortcuts, and media controls. It also has a 128×32 OLED display that shows animations and status information, RGB LEDs that provide visual feedback for each key press, and a rotary encoder for volume control.
-
-<br><br>
-
-### Why I Built It
-
-I wanted a macropad that matched the shortcuts I use every day instead of relying on a standard keyboard. I found myself constantly opening the same apps, taking screenshots, controlling media, and using the same keyboard shortcuts over and over. Building a macropad let me do all of that with a single key press.
-
-I also wanted to learn more about hardware by building a complete project from scratch. So, I designed the PCB, modeled the case, wrote the firmware, assembled the hardware, and documented the entire process. By the end of the project, I had a macropad that I actually use while learning more about PCB design, CAD, embedded programming, and hardware development.
-
-
-<br><br><br><br><br>
-  
 ### PCB Schematic
 
 <br>
