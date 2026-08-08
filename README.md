@@ -27,7 +27,7 @@ I also wanted to learn more about hardware by building a complete project from s
 
 ### Sponsored By
 
-<br>
+<br><br>
 
 <img width="320" alt="Hack Club" src="https://github.com/user-attachments/assets/8bc76b1a-8842-4f86-be09-2e3fcd437c8f" />
 
