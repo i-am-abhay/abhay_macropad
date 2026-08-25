@@ -20,6 +20,10 @@ I wanted a macropad that matched the shortcuts I use every day instead of relyin
 
 I also wanted to learn more about hardware by building a complete project from scratch. So, I designed the PCB, modeled the case, wrote the firmware, assembled the hardware, and documented the entire process. By the end of the project, I had a macropad that I actually use while learning more about PCB design, CAD, embedded programming, and hardware development.
 
+<br><br>
+
+<img width="1536" height="1024" alt="9c7098d9-06ef-40df-b8f9-aac108d800c5" src="https://github.com/user-attachments/assets/ac65e274-9fee-4f32-a1b0-64475f440d44" />
+
 
 <br><br><br><br><br><br>
 
